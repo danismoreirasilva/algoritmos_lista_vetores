@@ -23,11 +23,11 @@ int main()
     //leitura de dados;
     for (int i=0; i < n; i++){
         cin.ignore();//limpando o buffer;
-        cout << "Nome " <<i+1<<"º aluno: ";
+        cout << "Nome " <<i+1<<"Âº aluno: ";
         getline(cin, vetNome[i]);
 
         do{
-            cout << "Nota " <<i+1<<"º aluno: ";
+            cout << "Nota " <<i+1<<"Âº aluno: ";
             cin >> vetNotas[i];
         }while(vetNotas[i]<0 || vetNotas[i]>10);
     }
@@ -50,7 +50,7 @@ int main()
 
         }
 
-        if(achouElemento==true){
+        if(achouElemento){
             achouElemento = false;
         }else{
             cout <<"Pessoa inexistente "<<endl;
@@ -70,7 +70,7 @@ int main()
 
 
 /*
-Faça um algoritmo que leia n (n < 30) nomes e notas finais dos estudantes de uma turma e armazene
-estas informações em vetores. Em seguida, dado um nome pesquise sua existência na turma, e caso
-exista mostre a nota final correspondente. Caso contrário, apresente mensagem de pessoa inexistente.
-Faça isso até que o usuário não queira mais pesquisar*/
+FaÃ§a um algoritmo que leia n (n < 30) nomes e notas finais dos estudantes de uma turma e armazene
+estas informaÃ§Ãµes em vetores. Em seguida, dado um nome pesquise sua existÃªncia na turma, e caso
+exista mostre a nota final correspondente. Caso contrÃ¡rio, apresente mensagem de pessoa inexistente.
+FaÃ§a isso atÃ© que o usuÃ¡rio nÃ£o queira mais pesquisar*/
